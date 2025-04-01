@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.love-ya-like-a-sister-regular {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+[class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+
+.ctn {
+    height: auto;
+}
+
+
+.sidebar {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    min-height: 100vh;
+    margin-left: 20px;
+    border-top: none;
+
+
+}
+
+
+
+.btn-sm {
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-2:hover {
+    border: 3px solid red;
+    color: red;
+}
+
+.card img {
+    width: 80px;
+
+}
+
+
+.card {
+    height: 88px;
+
+}
+
+.card img {
+    width: 60px;
+    height: 100px;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+header ul li {
+    margin-left: 20px;
+
+}
+
+header ul li a h5 {
+    color: black;
+}
+
+
+.swiper {
+    width: 90%;
+    padding: 50px 0;
+    height: 300px;
+    overflow: hidden;
+    /* Ẩn phần thừa ngoài khung */
+}
+
+/* Định dạng mỗi slide trong Swiper */
+.swiper-slide {
+    position: relative;
+    width: 320px;
+    /* Kích thước slide cố định */
+    aspect-ratio: 3/4;
+    /* Tỷ lệ khung hình */
+    /* border: 1px solid rgba(177, 177, 177, 0.4); */
+    /* Viền nhẹ */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Định dạng ảnh trong slide */
+.swiper-slide img {
+    display: block;
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    /* Kế thừa bo góc từ slide */
+    user-select: none;
+    /* Không cho phép chọn ảnh */
+}
+
+/* Tinh chỉnh cho hiệu ứng coverflow */
+.swiper-slide-active {
+    transform: scale(1.1);
+    z-index: 10;
+    /* Đưa slide active lên trên */
+}
+
+
+
+.btn-sm {
+    width: 100%;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+
+
+    transition: transform 0.3s ease;
+
+}
+
+.sidebar img:hover {
+    transform: scale(1.2);
+}
+
+
+.newSP .card:hover {
+    animation: shake 0.3s ease-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.spBanChay .swiper-slide img {
+    display: block;
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    /* Kế thừa bo góc từ slide */
+    user-select: none;
+    /* Không cho phép chọn ảnh */
+}
+
+
+.spBanChay .swiper {
+    width: 100%;
+    padding: 50px 0;
+    height: 380px;
+    overflow: hidden;
+    /* Ẩn phần thừa ngoài khung */
+}
+
+/* Định dạng mỗi slide trong Swiper */
+.spBanChay .swiper-slide {
+    position: relative;
+    width: 400px;
+    /* Kích thước slide cố định */
+    aspect-ratio: 3/4;
+    /* Tỷ lệ khung hình */
+    border: 1px solid rgba(177, 177, 177, 0.4);
+    /* Viền nhẹ */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Định dạng ảnh trong slide */
+.spBanChay .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    /* Kế thừa bo góc từ slide */
+    user-select: none;
+    /* Không cho phép chọn ảnh */
+}
+
+/* Tinh chỉnh cho hiệu ứng coverflow */
+.spBanChay .swiper-slide-active {
+    transform: scale(1.1);
+    z-index: 10;
+    /* Đưa slide active lên trên */
+}
+
+.ft {
+    height: 700px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.foll {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100px;
+    border-bottom: none;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.foll h3 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.foll ul li {
+    margin-left: 10px;
+    font-size: 0px;
+    
+}
+
+.foll ul li i {
+    margin-left: 10px;
+    font-size: 20px;
+    color: red
+}
