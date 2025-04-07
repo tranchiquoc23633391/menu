@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style> 
+        #container{ 
+            margin: 0 auto;     
+                box-sizing: border-box;
+                padding: 0;
+        }
+
+        #quenmatkhau{
+            color: black;
+            text-decoration: none;
+          
+        }
+
+        #quenmatkhau:hover{
+            color: red;
+        }
+
+        .tab{
+            background: none ;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: gray;
+            font-weight: normal;
+        }
+
+        .tab.active{
+            font-weight: bold;
+            color: black;
+            border-bottom: 3px solid black;
+        }
+        
+        input[type="Sdt"], input[type="password"] {
+            height: 55px; /* Điều chỉnh chiều cao theo ý muốn */
+        }
+
+
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .separator::before,
+        .separator::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid lightgray;
+        }
+        .separator:not(:empty)::before {
+            margin-right: 10px;
+        }
+        .separator:not(:empty)::after {
+            margin-left: 10px;
+        }
+
+    
+ 
+    </style>
+     <link rel="stylesheet" href="../css/dungchung/dropdown.css"> <!-- Liên kết tới file CSS dropdown -->
+     <link rel="stylesheet" href="../css/style.css"> <!-- Liên kết tới style -->
+
+</head>
+<body>
+    <div class="container">
+
+            
+
+        <div class="col-11 mx-auto" id="header_menu">
+
+
+          
+        </div>
+    
+
+        <!-- mx-auto là ra giữ -->
+        <div class=" mx-auto" style="width: 65% ; margin-top: 50px;">
+        <div class="d-flex justify-content-center" style="gap: 70px;">
+            <button class="tab" id="login" onclick="switchTab(this)" style="font-size: 24px;">
+                Đăng nhập
+            </button>
+            <button class="tab" id="resistance" onclick="switchTab(this)" style="font-size: 24px;">
+                Đăng ký
+            </button>
+        </div>
+
+
+            <!-- cái form đăng ký nè  -->
+            <div class="d-flex justify-content-center" id="div_form"></div>
+            <form action="">
+
+                <div id="input">
+                    
+                </div>
+               
+
+                <!-- nội dung -->
+                <div class="membership-info" style="margin-top: 20px;">
+                    <h2 style="font-weight: inherit; font-weight: bolder; font-size: 120%;">ĐĂNG KÝ THÀNH VIÊN QS_toy - NHẬN NHIỀU ƯU ĐÃI HẤP DẪN</h2>
+                    <p>Hãy đăng ký để trở thành thành viên của QS_toy bằng chính <strong>số điện thoại mua hàng của bạn</strong> để có thể:</p>
+                    <ol>
+                        <li><strong>Đánh giá đơn hàng bạn vừa mua và kiểm tra lịch sử mua hàng:</strong> Bạn có thể chọn đơn hàng ở Danh sách đơn hàng và Đánh giá sản phẩm, dịch vụ của nShop để nShop có thể nâng cao sản phẩm và dịch vụ để phục vụ bạn tốt hơn.</li>
+                        <li><strong>Nhận ưu đãi mua sắm chỉ dành riêng cho bạn.</strong></li>
+                        <li><strong>Cập nhật thông tin mới nhất từ nShop.</strong></li>
+                    </ol>
+                </div>
+
+                <!-- nút đăng nhập nè  -->
+                <div id="button_submit">
+                    <button class="btn mt-3" style="background-color: rgb(255, 29, 29);   color: white; width: 100%; font-weight: bold;"> ĐĂNG NHẬP</button>
+                </div>
+
+
+                <div class="separator">
+                    <p class="mx-auto text-center" style="color: rgb(167, 167, 167);  margin-top: 10px; font-size: 130%   ; font-weight: bold;"> Hoặc </p>
+                </div>
+                
+
+                <div id="button_google " class="mt-2 mb-2">
+                    <button class="btn mt-3 border" style="background-color: rgb(255, 255, 255);   color: rgb(0, 0, 0); width: 100%;  height: 60px;" > 
+                        <img src="../img/icon/Google__G__logo.svg.webp" alt="" style="width: 5%;"> Tiếp tục với Google    </button>
+                </div>
+                
+                <div id="button_fb" class="mt-2 mb-2">
+                    <button class="btn mt-3 border" style="background-color: rgb(255, 255, 255);   color: rgb(0, 0, 0); width: 100%;  height: 60px; ">
+                        <img src="../img/icon/2021_Facebook_icon.svg.png" style="width: 5%;" alt="">  Tiếp tục với FaceBook    </button>
+                </div>
+
+            </form>
+            </div>
+        </div>
+        <div id="Footer">
+            
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../jc.js/eff.js"></script>
+    <script src="../jc.js/dangnhap_dangki.js"></script> 
+    
+    
+    <script src="../jc.js/laymenu.js"></script> <!-- Thêm dòng này để gọi laymenu.js -->
+    <script src="../jc.js/layfooter.js"></script> <!-- Thêm dòng này để gọi layfooter.js -->
+
+
+
+    <script>
+        // Gọi hàm switchTab với tab "Đăng nhập" khi trang được tải
+        document.addEventListener("DOMContentLoaded", function() {
+            switchTab(document.getElementById('login'));
+        });
+    </script>
+    
+</body>
+</html>     
